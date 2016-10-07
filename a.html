@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MANGO's Blog</title>
+	<link rel="stylesheet" type="text/css" href="image/a.css" />	
+	<Script Language="JavaScript">
+
+	window.onload=function(){
+            var story = document.getElementById('word');
+            var s = document.getElementById('show');
+            var i = 0;
+            timer=setInterval(function(){
+                s.innerHTML=story.innerHTML.substring(0,i);
+                i++;
+                if(s.innerHTML==story.innerHTML){
+                    clearInterval(timer);
+                }
+            },200);
+        }
+	
+
+	function fun2(){
+    if(confirm("确定要关注我吗？？？"))
+        alert("对方粉丝已达到上线啦~");
+}
+	</Script>
+</head>
+<body>
+<center>
+    <div class="container">
+    <div class="head">
+    <h1 id="word" style="display:none">大芒果的博客</h1><h1 id="show"></h1>
+    </div>
+    <div class="trans">
+    <ul><li><a href="a.html">主页</a></li>
+         <li><a href="b.html">博客</a></li>
+         <li><a href="c.html">相册</a></li>
+         <li><a href="d.html">留言</a></li>
+</ul>
+</div>
+    <div class="content">
+        <div class="left">
+        <img  src="image/TX1.jpg" width="200">
+        <h2>巨大的芒果</h2>
+        <p><a href="#" onclick="fun2()">关注</a></p></div>
+        <div class="right">
+        <h2>北京邮电大学</h2>
+        <p> &nbsp&nbsp&nbsp&nbsp北京邮电大学（Beijing University of Posts and Telecommunications），简称北邮，是中华人民共和国教育部直属，工业和信息化部共建的一所以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学，是北京高科大学联盟成员高校[1]  。系国家“211工程”、“985工程优势学科创新平台”项目重点建设，列入首批“卓越计划”、“111计划”。被誉为“中国信息科技人才的摇篮”。
+        前身是1955年成立的新中国第一所邮电高等学府——北京邮电学院。1960年被国务院确定为全国重点高校。 1993年更名为“北京邮电大学”。2000年，划入教育部直属高校行列。2012年，信息与通信工程一级学科全国排名第一。[3] 
+        现设有15个教学单位，3个研究院。学科专业已经覆盖理学、工学、经济学、管理学等10个学科门类，涉及22个一级学科。拥有全日制本、硕、博</p>
+        <pre>学生及留学生共约22000名，正式注册的非全日制学生约30000名。</pre>
+         
+         </div>
+    </div>
+    
+    </div>
+    <div class="bottom">
+    <h4>@ big mango</h4></div>
+    </center>
+
+
+	
+</body>
+</html>

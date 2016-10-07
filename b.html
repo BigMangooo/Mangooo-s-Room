@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MANGO's Blog</title>
+	<link rel="stylesheet" type="text/css" href="image/b.css" />	
+    <Script Language="JavaScript">
+    window.onload=function(){
+            var story = document.getElementById('word');
+            var s = document.getElementById('show');
+            var i = 0;
+            timer=setInterval(function(){
+                s.innerHTML=story.innerHTML.substring(0,i);
+                i++;
+                if(s.innerHTML==story.innerHTML){
+                    clearInterval(timer);
+                }
+            },200);
+        }
+
+    function fun2(){
+    if(confirm("确定要关注我吗？？？"))
+        alert("对方粉丝已达到上线啦~");
+}
+    </Script>
+</head>
+<body>
+<center>
+    <div class="container">
+    <div class="head">
+    <h1 id="word" style="display:none">大芒果的博客</h1><h1 id="show"></h1></div>
+    <div class="trans">
+    <ul><li><a href="a.html">主页</a></li>
+         <li><a href="b.html">博客</a></li>
+         <li><a href="c.html">相册</a></li>
+         <li><a href="d.html">留言</a></li>
+</ul>
+</div>
+    <div class="content">
+        <div class="left">
+        <img  src="image/TX1.jpg" width="200">
+        <h2>巨大的芒果</h2>
+        <p><a href="#" onclick="fun2()">关注</a></p></div>
+        <div class="right">
+        <h2>我太懒了什么都没有写啊啊啊！</h2>
+        </div>
+    </div>
+    
+    </div>
+    <div class="bottom">
+    <h4>@ big mango</h4></div>
+    </center>
+
+
+	
+</body>
+</html>
